@@ -61,15 +61,16 @@ class DarkSide(Tobacco):
 
 tobacco_1 = DarkSide("Дарк Сайд", "Средний")
 
-while True:
-    if __name__ == "__main__":
+
+if __name__ == "__main__":
+    while True:
         q_1 = input("первый вкус: ягоды, фрукты, свежесть, десерты?: ").lower()
         q_2 = input("второй: ягоды, фрукты, свежесть, десерты?: ").lower()
         q_3 = input("Добавить свежести?: ").lower()
         print(tobacco_1.get_mix(q_1, q_2, q_3))
 
-        q_4 = input("Завершить программу?: ")
-        if q_4 == "да":
+        q_4 = input("Сделать еще микс?: ")
+        if q_4 == "нет":
             break
 
 
